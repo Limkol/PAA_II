@@ -5,6 +5,8 @@
 #define N 8
 
 void mostra_matriz(char tabuleiro[][N]) {
+    static int silucao = 1;
+    printf("Solução %d\n", solucao++);
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             printf("%c ", tabuleiro[i][j]);
